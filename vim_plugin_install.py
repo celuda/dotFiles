@@ -2,7 +2,7 @@
 
 f = open("vim_plugin_on_github")
 
-import sys, subprocess, os, os.path as path, git
+import sys, subprocess, os, os.path as path
 from subprocess import call
 
 # Check folder existance
@@ -40,12 +40,9 @@ for l in f:
   if path.exists(gitCheckoutFolder):
     continue
   
-  print git.Repo.clone_from(l,gitCheckoutFolder)
-  '''
-  if call(["git clone",l,gitCheckoutFolder]):
+  if call(["git","clone",l,gitCheckoutFolder]):
     print "Error Occured. Message see above"
   else:
     print basename,"installed."
-  '''
 
 print "Done :)"
