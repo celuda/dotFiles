@@ -13,3 +13,5 @@
   ci = commit
   cm = commit -m
   pm = push origin master
+[core]
+	editor = vim
