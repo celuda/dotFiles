@@ -4,8 +4,8 @@ Use this repo to manage my config files
 # How to use
 1. Clone this project; if you want to use it for your own, fork it
 
-2. To move the config files into your home directory, run 
-   `python linkDotFilesBackToHome.py`
+2. To create symbolic links of the config files into your home directory, 
+   run `python linkDotFilesBackToHome.py`
 
 3. To install VIM plugins, run `python vim_plugin_install.py`. It would use 
    [pathogon](https://github.com/tpope/vim-pathogen) for plugin management.
