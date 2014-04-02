@@ -1,0 +1,15 @@
+[user]
+	name = Song Yangyu
+	email = flyfy1@gmail.com
+
+[branch "master"]
+  remote = origin
+[push]
+	default = matching
+
+[alias]
+  st = status
+  aa = add -A :/
+  ci = commit
+  cm = commit -m
+  pm = push origin master
