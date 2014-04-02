@@ -24,3 +24,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ L%l:C%c
 autocmd BufNewFile,BufRead *.pl set filetype=prolog
 
 set colorcolumn=80
+
+set nobackup
+set nowritebackup
+set noswapfile
