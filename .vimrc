@@ -6,7 +6,7 @@ set nowrap
 set ruler
 
 set colorcolumn=80
-set tw=79
+set tw=80
 
 set tabstop=2
 set shiftwidth=2
@@ -38,24 +38,34 @@ autocmd! bufwritepost .vimrc source %
 autocmd BufNewFile,BufRead *.pl set filetype=prolog
 
 let mapleader = ","
+" Quick quit command
+nnoremap <Leader>q :quit<CR>  " Quit current window
+nnoremap <Leader>e :wq<CR>    " Save and quite current window
+nnoremap <Leader>w :update<CR>" Make a save
+
 vnoremap <Leader>s :sort<CR>
+
 vnoremap < <gv
 vnoremap > >gv
 
-" Quick quit command
-noremap <Leader>e :quit<CR>  " Quit current window
-noremap <Leader>E :qa<CR>    " Quit all windows
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
-" Every unnecessary keystroke that can be saved is good for your health :)
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+nnoremap <c-h> <c-w>h
+
+noremap <F1> :set invnumber<CR>
+
+" TODO: 
+" Resize windows -- don't know how to do this yet.. ideal, way: 
+"   F3 to trigger resize mode, then can just resize using h/j/k/l; F3 again to
+"   off it.
 
 " easier moving between tabs
-noremap <C-n> <esc>:tabprevious<CR>
-noremap <C-m> <esc>:tabnext<CR>
+noremap <c-u> :tabprevious<CR>
+noremap <c-o> :tabnext<CR>
+
 
 " Disable Swap Files
 set nobackup
@@ -70,4 +80,3 @@ noremap Q gqap
 " CtrlP Settings
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc,*_build/*,*/coverage/*
-noremap <C-o> <esc>:CtrlP<CR>

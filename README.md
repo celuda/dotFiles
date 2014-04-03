@@ -19,6 +19,18 @@ Use this repo to manage my config files
    It will move the file into the config file forder, and put an symbolic link
    in its origin place. 
 
+# Foot Notes on vim key mappings
+This section is irrelevant to the propuse of this repo.. but just some interesting points to take note
+
+1. If one wants to use mapping `<c-?>`, note that ? can only be letters
+2. And additionally, the combination below better not used:
+
+        <c-m> -- means <enter>
+        <c-i> -- means <tab>
+        <c-s> -- means suspend, in most terminals
+
+3. Better be careful that, do not conflict with the tmux's prefix-key
+
 # TODO
 - Currently the user need to handle the .bashrc file themselves (by sourcing this file in their .bashrc).
   Consider using script to auto-add the sourcing part, and don't add if it already exists in the `.bashrc`

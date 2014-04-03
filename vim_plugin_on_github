@@ -26,3 +26,6 @@ https://github.com/adimit/prolog.vim.git
 
 # CtrlP
 https://github.com/kien/ctrlp.vim.git
+
+# Python-mode -- need VIM >=7.3 -- not really my habit yet.. disable this first.
+# git://github.com/klen/python-mode.git

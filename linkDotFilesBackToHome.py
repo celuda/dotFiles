@@ -3,7 +3,6 @@
 
 import os
 import os.path as path
-import sys
 
 homeFolder = os.environ['HOME']
 
@@ -12,8 +11,8 @@ if not path.isdir(backupFoldr):
   os.mkdir(backupFoldr,0700)
   print "created folder."
 
-files = [f for f in os.listdir('.') 
-    if f.startswith('.') and path.isfile(f) and f != '.bashrc']
+files = [f for f in os.listdir('.') \
+         if f.startswith('.') and path.isfile(f) and f != '.bashrc']
 
 for f in files:
   fpair = path.splitext(f)
@@ -26,6 +25,7 @@ for f in files:
     backupFileName = "%s/%s" % (backupFoldr, f)
     os.rename(linkToPath,backupFileName)
 
+
   fileFullPath = path.abspath(f)
-  os.symlink(fileFullPath,linkToPath)
+  os.symlink(fileFullPath, linkToPath)
   print "done for file: ", f
