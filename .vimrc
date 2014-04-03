@@ -80,3 +80,6 @@ noremap Q gqap
 " CtrlP Settings
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc,*_build/*,*/coverage/*
+
+" Folding
+nnoremap <Space> za
