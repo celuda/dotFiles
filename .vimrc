@@ -2,7 +2,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set number
-set nowrap
 set ruler
 
 set colorcolumn=80
@@ -20,7 +19,6 @@ highlight ColorColumn ctermbg=233
 
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
-set pastetoggle=<F2>
 
 function! HasPaste()
     if &paste
@@ -39,9 +37,10 @@ autocmd BufNewFile,BufRead *.pl set filetype=prolog
 
 let mapleader = ","
 " Quick quit command
-nnoremap <Leader>q :quit<CR>  " Quit current window
-nnoremap <Leader>e :wq<CR>    " Save and quite current window
-nnoremap <Leader>w :update<CR>" Make a save
+nnoremap <Leader>q :quit<CR>
+nnoremap <Leader>Q :qall<CR> 
+nnoremap <Leader>e :wq<CR>
+nnoremap <Leader>w :w<CR>
 
 vnoremap <Leader>s :sort<CR>
 
@@ -55,12 +54,14 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 nnoremap <c-h> <c-w>h
 
+" Toggles
 noremap <F1> :set invnumber<CR>
+set pastetoggle=<F2>
+noremap <F3> :set hlsearch! hlsearch?<CR>
 
-" TODO: 
-" Resize windows -- don't know how to do this yet.. ideal, way: 
-"   F3 to trigger resize mode, then can just resize using h/j/k/l; F3 again to
-"   off it.
+" TODO: Resize windows -- don't know how to do this yet.. ideal, way: A Function
+" Key to trigger resize mode, then can just resize using h/j/k/l; F3 again to
+" off it.
 
 " easier moving between tabs
 noremap <c-u> :tabprevious<CR>
@@ -83,3 +84,4 @@ set wildignore+=*.pyc,*_build/*,*/coverage/*
 
 " Folding
 nnoremap <Space> za
+
