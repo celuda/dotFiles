@@ -11,6 +11,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set wrap
 
 " color desert
 set t_Co=256
@@ -85,3 +86,5 @@ set wildignore+=*.pyc,*_build/*,*/coverage/*
 " Folding
 nnoremap <Space> za
 
+" Turn off code checking
+let g:pymode_lint = 0
