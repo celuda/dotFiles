@@ -13,6 +13,7 @@
   ci = commit
   cm = commit -m
   pm = push origin master
+  pp = push origin master
 [core]
 	editor = vim
 [merge]

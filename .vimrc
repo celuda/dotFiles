@@ -45,8 +45,8 @@ nnoremap <Leader>w :w<CR>
 
 vnoremap <Leader>s :sort<CR>
 
-vnoremap < <gv
-vnoremap > >gv
+" vnoremap < <gv
+" vnoremap > >gv
 
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
@@ -74,11 +74,6 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-
-noremap Q gq
-noremap Q gqap
-
-
 " CtrlP Settings
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc,*_build/*,*/coverage/*
@@ -88,3 +83,7 @@ nnoremap <Space> za
 
 " Turn off code checking
 let g:pymode_lint = 0
+
+
+" Search Related
+set incsearch
