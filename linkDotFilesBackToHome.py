@@ -19,13 +19,21 @@ for f in files:
   if fpair[1] != "" and fpair[1] != ".conf":
     continue
 
-  # Move the file into folder on existance
   linkToPath = "%s/%s" % (homeFolder,f)
+
+  # If this is a link, then simply update it, by removing it first
+  if os.path.islink(linkToPath):
+    os.remove(linkToPath)
+
+  # Move the file into folder on existance
   if path.exists(linkToPath):
     backupFileName = "%s/%s" % (backupFoldr, f)
     os.rename(linkToPath,backupFileName)
+    os.remove(linkToPath)
 
 
   fileFullPath = path.abspath(f)
+  print "full path: ", fileFullPath
+  print "link to path: ", linkToPath
   os.symlink(fileFullPath, linkToPath)
   print "done for file: ", f

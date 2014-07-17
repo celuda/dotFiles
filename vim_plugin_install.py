@@ -22,6 +22,21 @@ def makeSureDirectoryExists(dir_fullpath):
 makeSureDirectoryExists(bundleFolder)
 makeSureDirectoryExists(autoloadFolder)
 
+# pathogen file
+pathogenFile = "%s/pathogen.vim" % autoloadFolder
+if not path.isfile(pathogenFile):
+  call(['wget','-O',pathogenFile,"https://tpo.pe/pathogen.vim"])
+
+# Install Color Scheme plugin
+colorFolder = "%s/colors" % vimFolder
+makeSureDirectoryExists(colorFolder)
+colorFIle = "%s/wombat256mod.vim" % colorFolder
+if not path.isfile(colorFIle):
+  call(['wget','-O',colorFIle,
+    "http://www.vim.org/scripts/download_script.php?src_id=13400"
+  ])
+
+
 if not path.isfile(pathogenAutoloadFilePath):
   call(['curl','-Sso',pathogenAutoloadFilePath,
     "https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
