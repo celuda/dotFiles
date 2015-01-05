@@ -16,5 +16,6 @@
   pp = push origin master
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore_global
 [merge]
 	tool = vimdiff
