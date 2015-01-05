@@ -87,3 +87,5 @@ let g:pymode_lint = 0
 
 " Search Related
 set incsearch
+
+au BufNewFile,BufRead *.md set filetype=markdown
