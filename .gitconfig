@@ -9,7 +9,9 @@
 
 [alias]
   st = status
+  stp = status --porcelain
   aa = add -A :/
+  au = add -u :/
   ci = commit
   cm = commit -m
   pm = push origin master
@@ -18,4 +20,6 @@
 	editor = vim
 	excludesfile = ~/.gitignore_global
 [merge]
+	tool = vimdiff
+[diff]
 	tool = vimdiff
