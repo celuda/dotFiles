@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set number
-set ruler
+set nu
 
 set colorcolumn=80
 set tw=80
