@@ -11,11 +11,11 @@
   st = status
   stp = status --porcelain
   aa = add -A :/
-  au = add -u :/
+  au = add -u
   ci = commit
   cm = commit -m
-  pm = push origin master
-  pp = push origin master
+  pc = push origin HEAD
+  pf = push -f origin HEAD
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global

@@ -92,3 +92,4 @@ au BufNewFile,BufRead *.md set filetype=markdown
 
 " Remove cpp key-words
 let java_allow_cpp_keywords = 0 
+au BufNewFile,BufRead *.ejs set filetype=html
