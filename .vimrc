@@ -18,8 +18,8 @@ set t_Co=256
 color wombat256mod
 highlight ColorColumn ctermbg=233
 
-nnoremap <silent> <F9> :NERDTreeToggle<CR>
-nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
+nnoremap <Leader>f :TlistToggle<CR>
 
 function! HasPaste()
     if &paste
@@ -42,6 +42,7 @@ nnoremap <Leader>q :quit<CR>
 nnoremap <Leader>Q :qall<CR> 
 nnoremap <Leader>e :wq<CR>
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>r :SCCompileRun<CR>
 
 vnoremap <Leader>s :sort<CR>
 
@@ -56,9 +57,9 @@ nnoremap <c-l> <c-w>l
 nnoremap <c-h> <c-w>h
 
 " Toggles
-noremap <F1> :set invnumber<CR>
-set pastetoggle=<F2>
-noremap <F3> :set hlsearch! hlsearch?<CR>
+nnoremap <Leader>n :set invnumber<CR>
+set pastetoggle=<Leader>p
+nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
 
 " TODO: Resize windows -- don't know how to do this yet.. ideal, way: A Function
 " Key to trigger resize mode, then can just resize using h/j/k/l; F3 again to
@@ -93,3 +94,5 @@ au BufNewFile,BufRead *.md set filetype=markdown
 " Remove cpp key-words
 let java_allow_cpp_keywords = 0 
 au BufNewFile,BufRead *.ejs set filetype=html
+
+set shell=bash\ -l
