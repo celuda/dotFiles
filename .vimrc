@@ -6,9 +6,10 @@ nnoremap <Leader>qa :wq<CR>
 " nnoremap <Leader>r :SCCompileRun<CR>
 nnoremap <Leader>tf :NERDTreeToggle<CR>
 nnoremap <Leader>tl :TlistToggle<CR>
-nnoremap <Leader>rr :!<UP><CR>
+nnoremap <Leader>rr :SCCompileRun<CR>
+nnoremap <Leader>rp :!<UP><CR>
 nnoremap <Leader>rs :call VimuxRunCommand("clear; rspec --color " . bufname("%") . ':' . line('.'))<CR>
-nnoremap <Leader>rr :call VimuxRunLastCommand<CR>
+nnoremap <Leader>re :call VimuxRunLastCommand()<CR>
 
 " Toggles
 nnoremap <Leader>sn :set invnumber<CR>
