@@ -1,4 +1,17 @@
-execute pathogen#infect()
+let mapleader = ","
+" Quick quit command
+nnoremap <Leader>qq :quit<CR>
+nnoremap <Leader>qa :qall<CR> 
+nnoremap <Leader>qa :wq<CR>
+nnoremap <Leader>r :SCCompileRun<CR>
+nnoremap <Leader>tf :NERDTreeToggle<CR>
+nnoremap <Leader>tl :TlistToggle<CR>
+
+" Toggles
+nnoremap <Leader>sn :set invnumber<CR>
+set pastetoggle=<Leader>sp
+nnoremap <Leader>sh :set hlsearch! hlsearch?<CR>
+
 syntax on
 filetype plugin indent on
 set number
@@ -13,13 +26,11 @@ set softtabstop=2
 set expandtab
 set wrap
 
-" color desert
+execute pathogen#infect()
+
 set t_Co=256
 color wombat256mod
 highlight ColorColumn ctermbg=233
-
-nnoremap <Leader>t :NERDTreeToggle<CR>
-nnoremap <Leader>f :TlistToggle<CR>
 
 function! HasPaste()
     if &paste
@@ -31,35 +42,25 @@ endfunction
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ L%l:C%c
 
 
+
 autocmd! bufwritepost .vimrc source %
 
 " File Type Fix for prolog
 autocmd BufNewFile,BufRead *.pl set filetype=prolog
 
-let mapleader = ","
-" Quick quit command
-nnoremap <Leader>q :quit<CR>
-nnoremap <Leader>Q :qall<CR> 
-nnoremap <Leader>e :wq<CR>
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>r :SCCompileRun<CR>
 
 vnoremap <Leader>s :sort<CR>
 
-" vnoremap < <gv
-" vnoremap > >gv
-
-
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-l> <c-w>l
-nnoremap <c-h> <c-w>h
+" nnoremap <c-j> <c-w>j
+" nnoremap <c-k> <c-w>k
+" nnoremap <c-l> <c-w>l
+" nnoremap <c-h> <c-w>h
+nnoremap <c-J> <c-w>-
+nnoremap <c-K> <c-w>+
+nnoremap <c-H> <c-w><
+nnoremap <c-L> <c-w>>
 
-" Toggles
-nnoremap <Leader>n :set invnumber<CR>
-set pastetoggle=<Leader>p
-nnoremap <Leader>h :set hlsearch! hlsearch?<CR>
 
 " TODO: Resize windows -- don't know how to do this yet.. ideal, way: A Function
 " Key to trigger resize mode, then can just resize using h/j/k/l; F3 again to
