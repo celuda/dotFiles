@@ -9,9 +9,6 @@ http://github.com/scrooloose/nerdtree.git
 # Slim Syntax
 https://github.com/slim-template/vim-slim.git
 
-# Surrond 
-https://github.com/tpope/vim-surround.git
-
 # Coffee-Script Syntax
 https://github.com/kchmck/vim-coffee-script.git
 
@@ -33,4 +30,8 @@ https://github.com/kien/ctrlp.vim.git
 # Color Scheme
 https://github.com/michalbachowski/vim-wombat256mod.git
 
-# TODO: the powerline plugin seems to be a good one also
+# SingleCompile (But need to figure out how to run rspec)
+https://github.com/vim-scripts/SingleCompile.git
+
+# Vimux
+https://github.com/benmills/vimux.git

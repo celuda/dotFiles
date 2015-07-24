@@ -3,9 +3,10 @@ let mapleader = ","
 nnoremap <Leader>qq :quit<CR>
 nnoremap <Leader>qa :qall<CR> 
 nnoremap <Leader>qa :wq<CR>
-nnoremap <Leader>r :SCCompileRun<CR>
+" nnoremap <Leader>r :SCCompileRun<CR>
 nnoremap <Leader>tf :NERDTreeToggle<CR>
 nnoremap <Leader>tl :TlistToggle<CR>
+nnoremap <Leader>r :!<UP><CR>
 
 " Toggles
 nnoremap <Leader>sn :set invnumber<CR>
