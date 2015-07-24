@@ -6,7 +6,8 @@ nnoremap <Leader>qa :wq<CR>
 " nnoremap <Leader>r :SCCompileRun<CR>
 nnoremap <Leader>tf :NERDTreeToggle<CR>
 nnoremap <Leader>tl :TlistToggle<CR>
-nnoremap <Leader>r :!<UP><CR>
+nnoremap <Leader>rp :!<UP><CR>
+map <Leader>rr :call VimuxRunCommand("clear; rspec " . bufname("%"))<CR>
 
 " Toggles
 nnoremap <Leader>sn :set invnumber<CR>
