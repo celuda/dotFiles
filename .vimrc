@@ -70,9 +70,10 @@ nnoremap <c-L> <c-w>>
 " Key to trigger resize mode, then can just resize using h/j/k/l; F3 again to
 " off it.
 
-" easier moving between tabs
-noremap <c-u> :tabprevious<CR>
-noremap <c-o> :tabnext<CR>
+" easier moving between tabs -- remove this cuz it conflicts with the jump
+" forward/backward
+" noremap <c-u> :tabprevious<CR>
+" noremap <c-o> :tabnext<CR>
 
 
 " Disable Swap Files
