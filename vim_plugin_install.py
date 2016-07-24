@@ -56,8 +56,8 @@ for l in f:
     continue
   
   if call(["git","clone",l,gitCheckoutFolder]):
-    print "Error Occured. Message see above"
+    print("Error Occured. Message see above")
   else:
-    print basename,"installed."
+    print(basename,"installed.")
 
-print "Done :)"
+print("Done :)")

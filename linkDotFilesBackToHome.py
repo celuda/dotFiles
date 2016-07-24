@@ -8,8 +8,8 @@ homeFolder = os.environ['HOME']
 
 backupFoldr = homeFolder + "/.bak"
 if not path.isdir(backupFoldr):
-  os.mkdir(backupFoldr,0700)
-  print "created folder."
+  os.mkdir(backupFoldr, 0o700)
+  print("created folder.")
 
 files = [f for f in os.listdir('.') \
          if f.startswith('.') and path.isfile(f) and f != '.bashrc']
@@ -33,7 +33,7 @@ for f in files:
 
 
   fileFullPath = path.abspath(f)
-  print "full path: ", fileFullPath
-  print "link to path: ", linkToPath
+  print("full path: ", fileFullPath)
+  print("link to path: ", linkToPath)
   os.symlink(fileFullPath, linkToPath)
-  print "done for file: ", f
+  print("done for file: ", f)
