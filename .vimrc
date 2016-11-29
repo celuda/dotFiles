@@ -4,12 +4,14 @@ nnoremap <Leader>qq :quit<CR>
 nnoremap <Leader>qa :qall<CR> 
 nnoremap <Leader>qa :wq<CR>
 " nnoremap <Leader>r :SCCompileRun<CR>
-nnoremap <Leader>tf :NERDTreeToggle<CR>
-nnoremap <Leader>tl :TlistToggle<CR>
 nnoremap <Leader>rr :SCCompileRun<CR>
 nnoremap <Leader>rp :!<UP><CR>
 nnoremap <Leader>rs :call VimuxRunCommand("clear; rspec --color " . bufname("%") . ':' . line('.'))<CR>
 nnoremap <Leader>re :call VimuxRunLastCommand()<CR>
+nnoremap <Leader>rb :call VimuxRunCommand("clear ; ruby " . bufname("%"))<CR>
+
+nnoremap <F8> :NERDTreeToggle<CR>
+nnoremap <F9> :TlistToggle<CR>
 
 " Toggles
 nnoremap <Leader>sn :set invnumber<CR>

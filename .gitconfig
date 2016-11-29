@@ -16,7 +16,12 @@
   cm = commit -m
   pc = push origin HEAD
   pf = push -f origin HEAD
+  ph = push -f heroku master
+  up = pull --rebase origin master
+  uu = pull --rebase upstream master
   co = checkout
+  d  = diff
+  bd = branch -D
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -24,3 +29,9 @@
 	tool = vimdiff
 [diff]
 	tool = vimdiff
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[github]
+	user = flyfy1
