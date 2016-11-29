@@ -37,4 +37,7 @@ https://github.com/vim-scripts/SingleCompile.git
 https://github.com/benmills/vimux.git
 
 # PHP.Vim
-https://github.com/StanAngeloff/php.vim.git
+# https://github.com/StanAngeloff/php.vim.git
+
+# Docker file
+https://github.com/ekalinin/Dockerfile.vim.git
