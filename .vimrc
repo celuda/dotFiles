@@ -53,6 +53,7 @@ autocmd! bufwritepost .vimrc source %
 
 " File Type Fix for prolog
 autocmd BufNewFile,BufRead *.pl set filetype=prolog
+autocmd BufNewFile,BufRead *.thor set filetype=ruby
 
 
 vnoremap <Leader>s :sort<CR>

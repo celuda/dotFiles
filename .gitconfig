@@ -22,6 +22,8 @@
   uu = pull --rebase upstream master
   co = checkout
   d  = diff
+  b = branch
+  br = branch -r
   bd = branch -D
 [core]
 	editor = vim
