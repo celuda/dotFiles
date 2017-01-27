@@ -1,10 +1,10 @@
 # List of plugin files on github
 
 # sensible -- most basic one
-http://github.com/tpope/vim-sensible.git
+https://github.com/tpope/vim-sensible.git
 
 # nerdtree
-http://github.com/scrooloose/nerdtree.git
+https://github.com/scrooloose/nerdtree.git
 
 # Slim Syntax
 https://github.com/slim-template/vim-slim.git
