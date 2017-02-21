@@ -15,8 +15,9 @@
   ci = commit
   cm = commit -m
   pc = push origin HEAD
-  pf = push -f origin HEAD
-  ph = push -f heroku master
+  pf = push --force-with-lease origin HEAD
+  ph = push heroku master
+  pff = push -f origin HEAD
   up = pull --rebase origin master
   uh = pull --rebase origin HEAD
   uu = pull --rebase upstream master
