@@ -3,6 +3,8 @@
 # These are to be set in the env variables (pls define them in your bashrc):
 #   - GIT_AUTHOR_NAME
 #   - GIT_AUTHOR_EMAIL
+#
+#   See more: <https://git-scm.com/docs/git-commit-tree>
 
 [branch "master"]
   remote = origin
