@@ -26,6 +26,7 @@
   b = branch
   br = branch -r
   bd = branch -D
+  rbc = rebase --continue
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
