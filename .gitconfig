@@ -1,6 +1,8 @@
 [user]
-	name = Song Yangyu
-	email = flyfy1@gmail.com
+## name, email 
+# These are to be set in the env variables (pls define them in your bashrc):
+#   - GIT_AUTHOR_NAME
+#   - GIT_AUTHOR_EMAIL
 
 [branch "master"]
   remote = origin
