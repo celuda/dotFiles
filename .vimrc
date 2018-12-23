@@ -52,8 +52,8 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ L%l:C%c
 autocmd! bufwritepost .vimrc source %
 
 " File Type Fix for prolog
-autocmd BufNewFile,BufRead *.pl set filetype=prolog
-autocmd BufNewFile,BufRead *.thor set filetype=ruby
+autocmd BufNewFile,BufRead *.py set filetype=python
+autocmd BufNewFile,BufRead *.pl set filetype=perl
 
 
 vnoremap <Leader>s :sort<CR>
@@ -104,4 +104,4 @@ au BufNewFile,BufRead *.md set filetype=markdown
 let java_allow_cpp_keywords = 0 
 au BufNewFile,BufRead *.ejs set filetype=html
 
-set shell=bash\ -l
+set shell=zsh\ -l
