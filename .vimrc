@@ -1,4 +1,4 @@
-let mapleader = ","
+ret mapleader = ","
 " Quick quit command
 nnoremap <Leader>qq :quit<CR>
 nnoremap <Leader>qa :qall<CR> 
@@ -26,9 +26,9 @@ set nu
 set colorcolumn=80
 set tw=80
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set wrap
 
