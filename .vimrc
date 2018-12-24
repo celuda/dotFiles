@@ -1,4 +1,4 @@
-ret mapleader = ","
+set mapleader = ","
 " Quick quit command
 nnoremap <Leader>qq :quit<CR>
 nnoremap <Leader>qa :qall<CR> 
@@ -104,4 +104,4 @@ au BufNewFile,BufRead *.md set filetype=markdown
 let java_allow_cpp_keywords = 0 
 au BufNewFile,BufRead *.ejs set filetype=html
 
-set shell=zsh\ -l
+"set shell=zsh\ -l
