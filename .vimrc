@@ -1,4 +1,4 @@
-set mapleader = ","
+let mapleader = ","
 " Quick quit command
 nnoremap <Leader>qq :quit<CR>
 nnoremap <Leader>qa :qall<CR> 
